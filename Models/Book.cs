@@ -25,7 +25,8 @@ namespace BooksApi.Models
 
         public string Author { get; set; }
 
-        [BsonExtraElements]
-        public IDictionary<string, object> Metadata { get; set; }
+        public BookMetadata metadata { get; set; }
+        //[BsonExtraElements]
+        //public IDictionary<string, object> Metadata { get; set; }
     }
 }

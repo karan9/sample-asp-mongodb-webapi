@@ -1,6 +1,7 @@
 ﻿using BooksApi.Models;
 using BooksApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace BooksApi.Controllers
@@ -41,6 +42,19 @@ namespace BooksApi.Controllers
             return CreatedAtRoute("GetBook", new { id = book.Id.ToString() }, book);
         }
 
+        [HttpPut]
+        [Route("updateNew")]
+        public IActionResult UpdateData(Dictionary<string, string> body)
+        {
+            string updateKey = body["key"];
+            string updateValue = body["value"];
+            string id = body["id"];
+
+            _bookService.UpdateNew(id, updateKey, updateValue);
+
+           return Ok();
+        }
+
         [HttpPut("{id:length(24)}")]
         public IActionResult Update(string id, Book bookIn)
         {
@@ -69,6 +83,37 @@ namespace BooksApi.Controllers
             _bookService.Remove(book.Id);
 
             return NoContent();
+        }
+
+
+        // Dummy function to insert array based data.
+        [HttpPost]
+        [Route("insertArray")]
+        public IActionResult InsertArray()
+        {
+            _bookService.InsertArray();
+
+            return Ok();
+        }
+
+        // Example of Updating the array using POSITIONAL operator
+        [HttpPut]
+        [Route("updateArray")]
+        public IActionResult UpdateArray()
+        {
+
+            _bookService.UpdateArray();
+            return Ok();
+        }
+
+        // Example of updating the array elements with array filters
+        [HttpPut]
+        [Route("updateArrayInsideElement")]
+        public IActionResult UpdateArrayInsideElement()
+        {
+
+            _bookService.UpdateElementInsideArray();
+            return Ok();
         }
     }
 }

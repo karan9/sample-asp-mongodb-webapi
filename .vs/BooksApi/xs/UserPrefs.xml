@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9023BAAB-AEDF-4DFA-AC66-B7A0267F9249}|Default">
+  <MonoDevelop.Ide.ItemProperties.BooksApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/BookService.cs">
+    <Files>
+      <File FileName="Controllers/BooksController.cs" Line="89" Column="54" />
+      <File FileName="Models/BookstoreDatabaseSettings.cs" />
+      <File FileName="readme.md" />
+      <File FileName="Startup.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/Book.cs" Line="33" Column="1" NotebookId="1" />
+      <File FileName="Services/BookService.cs" Line="93" Column="18" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BooksApi" expanded="True">
+            <Node name="BooksApi" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BookService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
